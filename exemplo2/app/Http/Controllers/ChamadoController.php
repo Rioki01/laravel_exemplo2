@@ -9,7 +9,7 @@ class ChamadoController extends Controller
     public function index()
     {
         $chamados = Chamado::all();
-        return view('chamados.index', compact('chamados'));
+        return view('pages.dashboard', compact('chamados'));
     }
 
     public function create()
